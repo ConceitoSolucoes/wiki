@@ -1,9 +1,4 @@
-<html>
-<head>
-</head>
-<body>
-  
-<h2 style="text-align: justify;"><span style="font-family: verdana, geneva; font-size: 12pt; color: #000000; background-color: #ffffff;"><strong><span style="font-size: 14pt; background-color: #ffffff;">Corre&ccedil;&otilde;es e <span style="font-size: 12pt; background-color: #ffffff;">implementa&ccedil;&otilde;es</span> Do CIEvolution [6.1.7] PARA O SUPORTE</span><img style="float: right;" src="https://s3.amazonaws.com/movidesk-files/14C591A7BA42EE3CF2A6443B297D31B5" alt="420x272 s&oacute; logo.jpg" width="227" height="147" /></strong></span></h2>
+<h2 style="text-align: justify;"><span style="font-family: verdana, geneva; font-size: 12pt; color: #000000; background-color: #ffffff;"><strong><span style="font-size: 14pt; background-color: #ffffff;">Corre&ccedil;&otilde;es e <span style="background-color: #ffffff;">implementa&ccedil;&otilde;es</span> Do CIEvolution [6.1.7]</span><img style="float: right;" src="https://s3.amazonaws.com/movidesk-files/14C591A7BA42EE3CF2A6443B297D31B5" alt="420x272 s&oacute; logo.jpg" width="227" height="147" /></strong></span></h2>
 <p style="text-align: justify;"><span style="color: #000000; background-color: #ffffff; font-family: verdana, geneva;">&nbsp;</span></p>
 <h2 style="padding-left: 90px; text-align: justify;"><span style="font-family: verdana, geneva; font-size: 12pt; color: #000000; background-color: #ffffff;">&nbsp;</span></h2>
 <p style="text-align: justify;"><span style="font-family: verdana, geneva; font-size: 12pt; color: #000000; background-color: #ffffff;">LEGENDA</span></p>
@@ -40,29 +35,5 @@
 <p style="padding-left: 30px; text-align: justify;"><span style="font-family: verdana, geneva; font-size: 12pt;">-&gt; Caso seja necess&aacute;rio estornar um t&iacute;tulo, diferente da baixa global na rotina de Baixa/Estorno, o estorno ser&aacute; feito apenas no titulo desejado.</span></p>
 <p style="padding-left: 30px; text-align: justify;"><span style="font-family: verdana, geneva; font-size: 12pt;">-&gt; Ap&oacute;s a baixa finalizada, ser&aacute; apresentado uma tela de impress&atilde;o de recibo para cada t&iacute;tulo, caso seja necess&aacute;rio a impress&atilde;o.</span></p>
 <p style="padding-left: 30px; text-align: justify;">&nbsp;</p>
-<p style="padding-left: 30px; text-align: justify;">&nbsp;</p>
-<p style="text-align: left;"><span style="font-size: 12pt;"><strong><span style="font-family: verdana, geneva;">CORRE&Ccedil;&Ocirc;ES:</span></strong></span></p>
-<p style="text-align: left;"><span style="font-size: 12pt;"><strong><span style="font-family: verdana, geneva;">S = 24453 </span></strong><span style="font-family: verdana, geneva;">Alterado para que no SPED Fiscal s&oacute; considere vendas com opera&ccedil;&atilde;o de cart&atilde;o, quando possu&iacute;rem Administradora definida corretamente.</span></span></p>
-<p style="text-align: left;"><span style="font-family: verdana, geneva; font-size: 12pt;"><strong>S = 24518</strong> Em vers&otilde;es anteriores, ocorria um erro no SPED Contribui&ccedil;&otilde;es, n&atilde;o gerando o Registro F550. Feito ajuste e corrigido o bloco F550/1900. Segue imagem exemplificativa do arquivo com a falha, e com o arquivo correto.</span></p>
-<p style="text-align: left;">&nbsp;</p>
-<p style="text-align: left;"><span style="font-family: verdana, geneva; font-size: 12pt;"><a title="WhatsApp Image 2021-04-09 at 11.23.45.jpeg" href="https://s3.amazonaws.com/movidesk-files/8AF1352A9F389BBAF130FF830233A440"><img style="display: block; margin-left: auto; margin-right: auto;" src="https://s3.amazonaws.com/movidesk-files/8AF1352A9F389BBAF130FF830233A440" alt="WhatsApp Image 2021-04-09 at 11.23.45.jpeg" width="744" height="277" /></a></span></p>
-<p style="text-align: left;">&nbsp;</p>
-<p style="text-align: left;"><span style="font-family: verdana, geneva; font-size: 12pt;"><strong>S=&nbsp;24462</strong> Na vers&atilde;o anterior estava ocorrendo falha ao lan&ccedil;ar o rateio de centro de custo, casos espec&iacute;ficos o valor do centro de custo era igual ao valor total, porem o sistema apresentava falha e retornava que o valor estava superior ao restante. Abaixo imagem do caso:</span></p>
-<p style="text-align: left;"><span style="font-family: verdana, geneva; font-size: 12pt;"><img style="display: block; margin-left: auto; margin-right: auto;" src="https://s3.amazonaws.com/movidesk-files/13AA41983291F084CE1AE9CB429414F6" width="789" height="401" />Ao comparar um tipo currency com o Value do compoente TRxDBCalcEdit, em alguns casos embora os valores&nbsp;apresentavam ser&nbsp;iguais, a compara&ccedil;&atilde;o apresenta diverg&ecirc;ncia, pois o value desse componente &eacute; do tipo Extended.&nbsp;</span></p>
-<p style="text-align: left;"><span style="font-family: verdana, geneva; font-size: 12pt;">Solu&ccedil;&atilde;o, utilizar a rotina de arredondamento para comparar os valores.</span></p>
-<p style="text-align: left;"><span style="font-family: verdana, geneva; font-size: 12pt;">Melhorias :</span></p>
-<ul>
-<li style="text-align: left;"><span style="font-family: verdana, geneva; font-size: 12pt;">Corrigido falha ao tentar acessar o rateio quando j&aacute; existiam lan&ccedil;amentos rateados;</span></li>
-<li style="text-align: left;"><span style="font-family: verdana, geneva; font-size: 12pt;">Corrigido rotina para carregar percentual restante ao iniciar inclus&atilde;o do novo item do rateio.</span></li>
-</ul>
-<p style="padding-left: 30px;">&nbsp;</p>
+<p style="padding-left: 30px; text-align: justify;">&nbsp;&nbsp;</p>
 </div>
-<div><span style="background-color: #ffffff; font-size: 12pt; font-family: verdana, geneva;"><strong>Ap&oacute;s atualiza&ccedil;&atilde;o de vers&atilde;o, deve-se atualizar os arquivos.</strong></span></div>
-<div>&nbsp;</div>
-<div><span style="background-color: #ffffff; font-size: 12pt; font-family: verdana, geneva;"><strong>LINK DE ARQUIVOS PARA ATUALIZA&Ccedil;&Atilde;O:&nbsp;<a href="https://drive.google.com/file/d/1oguGHEOBnx9IoAkZSfGwE_dOq0oYdoMR/view?usp=sharing">https://drive.google.com/file/d/1oguGHEOBnx9IoAkZSfGwE_dOq0oYdoMR/view?usp=sharing</a></strong></span></div>
-<div><span style="font-family: verdana, geneva;">&nbsp;</span></div>
-<div><span style="font-family: verdana, geneva;">&nbsp;</span></div>
-<div><span style="font-family: verdana, geneva;">&nbsp;</span></div>
-  
-</body>
-</html>
