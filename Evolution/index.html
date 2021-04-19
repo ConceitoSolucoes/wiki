@@ -1,12 +1,90 @@
 <html>
-<head>
-  <title>Evolution Docs</title>
-</head>
-<body>
-  <h1>Test</h1>
-  <h2>Versão: 1.0.2</h2>
-  <h2>Versão: 1.0.1</h2>
-  <h2>Versão: 1.0.0</h2>
-  <img src="./assets/Evolution.jpg" />  
-</body>
+  <head>
+    <title>Evolution Docs</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row doc-header">
+        <div
+          class="col-sm-2"
+          style="display: flex; align-items: center; justify-content: center"
+        >
+          <img src="./assets/Evolution.jpg" class="img-fluid" />
+        </div>
+        <div class="col-sm-10">
+          <h1 class="display-1">Evoluti Docs</h1>
+          <h2 class="text-secondary">Conceito Tecnologia</h2>
+          <p>
+            <a
+              class="text-decoration-none"
+              target="_blank"
+              href="http://conceitotecnologia.inf.br/"
+            >
+              www.conceitotecnologia.com
+            </a>
+            |
+            <a
+              class="text-decoration-none"
+              target="_blank"
+              href="mailto:atendimento@conceitotecnologia.com?Subject=Título%20da%20mensagem"
+            >
+              atendimento@conceitotecnologia.com
+            </a>
+            |
+            <a
+              class="text-decoration-none"
+              target="_blank"
+              href="https://api.whatsapp.com/send?phone=557736147300"
+            >
+              (77) 3614-7300
+            </a>
+          </p>
+        </div>
+      </div>
+      <div class="row versoes"></div>
+    </div>
+    <script>
+      var versoes = [
+        {
+          nome: "v6.1.7",
+          data: "11/11/1111",
+        },
+        {
+          nome: "v1.1.9",
+          data: "11/11/1111",
+        },
+        {
+          nome: "v1.1.9",
+          data: "11/11/1111",
+        },
+        {
+          nome: "v1.1.9",
+          data: "11/11/1111",
+        },
+      ];
+      versoes
+        .map((x) => {
+          var div = document.createElement("div");
+          div.className = "col-2 p-2";
+          var a = document.createElement("a");
+          a.href = "./versoes/" + x.nome;
+          div.appendChild(a);
+          var divVersao = document.createElement("div");
+          divVersao.className = "versao";
+          a.appendChild(divVersao);
+          var divNome = document.createElement("div");
+          divNome.className = "nome";
+          divNome.innerText = x.nome;
+          var divData = document.createElement("div");
+          divData.className = "data";
+          divData.innerText = x.data;
+          divVersao.appendChild(divNome);
+          divVersao.appendChild(divData);
+          return div;
+        })
+        .forEach((el) => document.querySelector(".versoes").appendChild(el));
+    </script>
+  </body>
 </html>
