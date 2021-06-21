@@ -1,0 +1,127 @@
+<h2 style="text-align: justify;"><span style="font-size: 12pt; color: #000000; background-color: #ffffff; font-family: verdana, geneva;"><strong><span style="background-color: #ffffff;">Corre&ccedil;&otilde;es e <span style="background-color: #ffffff;">implementa&ccedil;&otilde;es</span> Do CIEvolution [6.2.0]</span><img style="float: right;" src="https://s3.amazonaws.com/movidesk-files/14C591A7BA42EE3CF2A6443B297D31B5" alt="420x272 s&oacute; logo.jpg" width="227" height="147" /></strong></span></h2>
+<p style="text-align: justify;"><span style="font-family: verdana, geneva;">&nbsp;</span></p>
+<h2 style="padding-left: 90px; text-align: justify;"><span style="font-size: 12pt; color: #000000; background-color: #ffffff; font-family: verdana, geneva;">&nbsp;</span></h2>
+<p style="text-align: justify;"><span style="font-size: 12pt; color: #000000; background-color: #ffffff; font-family: verdana, geneva;">LEGENDA</span></p>
+<p style="text-align: justify;"><span style="font-size: 12pt; color: #000000; background-color: #ffffff; font-family: verdana, geneva;">S= Solicita&ccedil;&atilde;o</span></p>
+<p style="text-align: justify;"><span style="font-family: verdana, geneva;">&nbsp;</span></p>
+<p style="text-align: justify;"><span style="font-family: verdana, geneva; font-size: 12pt;"><strong><span style="background-color: #ffffff;">MELHORIAS</span></strong></span></p>
+<p style="text-align: justify;"><span style="font-family: verdana, geneva; font-size: 12pt;">&nbsp;</span></p>
+<p style="text-align: justify;"><span style="font-family: verdana, geneva; font-size: 12pt;"><strong>S=&nbsp;20416, 23222</strong>, - Implementado ao o sistema o controle de pre&ccedil;o de venda por empresa. O sistema permitir&aacute; o uso do pre&ccedil;o do produto por filial, ou pre&ccedil;o global.&nbsp;</span></p>
+<p style="text-align: justify;"><span style="font-family: verdana, geneva; font-size: 12pt;">Da forma que a rotina foi concebida permitir&aacute; que um produto possua pre&ccedil;o por empresa, como tamb&eacute;m usar o pre&ccedil;o global nas demais empresas que n&atilde;o foram definidos pre&ccedil;o por filial.&nbsp;&nbsp;</span></p>
+<p style="text-align: justify;"><span style="font-family: verdana, geneva; font-size: 12pt;">Cadastro de produto ser&aacute; apresentado o pre&ccedil;o global quando n&atilde;o existir pre&ccedil;o por empresa:</span></p>
+<p><span style="font-family: verdana, geneva; font-size: 12pt;">&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="https://s3.amazonaws.com/movidesk-files/578B9D5BF8DFEF9438E98DF01BDD5134" width="800" height="379" /></span></p>
+<p style="text-align: justify;"><span style="font-family: verdana, geneva; font-size: 12pt;">&nbsp;</span></p>
+<p style="text-align: justify;"><span style="font-family: verdana, geneva; font-size: 12pt;">O pre&ccedil;o por filial s&oacute; poder&aacute; ser visualizado estando na filial ao qual foi associado o pre&ccedil;o:</span></p>
+<p><span style="font-family: verdana, geneva; font-size: 12pt;"><img style="display: block; margin-left: auto; margin-right: auto;" src="https://s3.amazonaws.com/movidesk-files/BBBDC8FAFC6DD4B09E266BEEEC888268" width="800" height="378" /></span></p>
+<p style="text-align: justify;"><span style="font-family: verdana, geneva; font-size: 12pt;">&nbsp;</span></p>
+<p style="text-align: justify;"><span style="font-family: verdana, geneva; font-size: 12pt;"><strong>FPV:&nbsp;</strong>No processo de atualiza&ccedil;&atilde;o do FPV em casos de m&uacute;ltiplos empresas o sistema sempre verificar se possui FPV por Dados Empresa, caso n&atilde;o possua buscar&aacute; FPV global.</span></p>
+<p style="text-align: justify;"><span style="font-family: verdana, geneva; font-size: 12pt;">Atualiza&ccedil;&atilde;o do pre&ccedil;o de varejo e ou atado:</span></p>
+<ul>
+<li style="text-align: justify;"><span style="font-family: verdana, geneva; font-size: 12pt;">Sistema verificar&aacute; se produto possui FPV definido em "Dados empresa", se definido utilizar&aacute; como par&acirc;metro o FPV "Dados Empresa" para atualizar o pre&ccedil;o varejo e ou atacado em "Dados Empresa":</span></li>
+</ul>
+<p><span style="font-family: verdana, geneva; font-size: 12pt;">&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="https://s3.amazonaws.com/movidesk-files/9C96AF3393E21A40ACBA77EF777D8748" width="800" height="378" /></span></p>
+<p style="text-align: justify;"><span style="font-family: verdana, geneva; font-size: 12pt;">&nbsp;</span></p>
+<ul>
+<li style="text-align: justify;"><span style="font-family: verdana, geneva; font-size: 12pt;">Caso n&atilde;o tenha FPV em "Dados Empresa",&nbsp;mas possua pre&ccedil;o varejo e atacado em "Dados Empresa", o sistema ir&aacute; utilizar o FPV global como par&acirc;metro para atualizar o pre&ccedil;o varejo e ou atacado em "Dados Empresa":</span></li>
+</ul>
+<p><span style="font-family: verdana, geneva; font-size: 12pt;"><img style="display: block; margin-left: auto; margin-right: auto;" src="https://s3.amazonaws.com/movidesk-files/154EC7D0D8C4EC2D8B9D11AF877E3A20" width="800" height="426" /></span></p>
+<p><span style="font-family: verdana, geneva; font-size: 12pt;">&nbsp;</span></p>
+<ul>
+<li><span style="font-family: verdana, geneva; font-size: 12pt;">Adicionado o custo de aquisi&ccedil;&atilde;o e custo m&eacute;dio em "Dados Empresa":</span></li>
+</ul>
+<p><span style="font-family: verdana, geneva; font-size: 12pt;">&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="https://s3.amazonaws.com/movidesk-files/F92220EF752544B34C5E1DCB3C430837" width="799" height="424" /></span></p>
+<p><span style="font-family: verdana, geneva; font-size: 12pt;">&nbsp;</span></p>
+<p><span style="font-family: verdana, geneva; font-size: 12pt;"><strong>Consulta produto F11:</strong></span></p>
+<ul>
+<li style="text-align: justify;"><span style="font-family: verdana, geneva; font-size: 12pt;">&nbsp;Ajuste no layout da consulta produto F11, foi reposicionado o pre&ccedil;o varejo e atacado:</span></li>
+</ul>
+<p><span style="font-family: verdana, geneva; font-size: 12pt;"><img style="display: block; margin-left: auto; margin-right: auto;" src="https://s3.amazonaws.com/movidesk-files/1206187742A63BE7D2A68C93B1EE2695" width="801" height="417" /></span></p>
+<p style="text-align: justify;"><span style="font-family: verdana, geneva; font-size: 12pt;">&nbsp;</span></p>
+<p style="text-align: justify;"><span style="font-family: verdana, geneva; font-size: 12pt;"><strong>Campanha promocional:</strong></span></p>
+<p style="text-align: justify;"><span style="font-family: verdana, geneva; font-size: 12pt;">A campanha promocional n&atilde;o &eacute; por empresa, sempre ser&aacute; aplicada de forma global, considerando como par&acirc;metro o pre&ccedil;o varejo global. Ent&atilde;o o pre&ccedil;o promocional ser&aacute; mesmo para todas as empresas.</span></p>
+<p style="text-align: justify;"><span style="font-family: verdana, geneva; font-size: 12pt;">&nbsp;</span></p>
+<p style="text-align: justify;"><span style="font-family: verdana, geneva; font-size: 12pt;"><strong>Reajuste de pre&ccedil;o:</strong></span></p>
+<p style="text-align: justify;"><span style="font-family: verdana, geneva; font-size: 12pt;">O Reajuste de pre&ccedil;o n&atilde;o&nbsp; &eacute; por empresa, sempre ser&aacute; aplicada de forma global, considerando como par&acirc;metro o pre&ccedil;o varejo global. Ent&atilde;o o pre&ccedil;o definido em reajuste de pre&ccedil;o sempre atualizar&aacute; o pre&ccedil;o varejo global.</span></p>
+<p style="text-align: justify;"><span style="font-family: verdana, geneva; font-size: 12pt;">&nbsp;</span></p>
+<p style="text-align: justify;"><span style="font-family: verdana, geneva; font-size: 12pt;"><strong>Demais rotinas:&nbsp;</strong></span></p>
+<p style="text-align: justify;"><span style="font-family: verdana, geneva; font-size: 12pt;">&nbsp;Todas as demais rotinas que utilizam o produto faram uso dos dados definidos em aba "Dados Empresa".</span></p>
+<p style="text-align: justify;"><span style="font-family: verdana, geneva; font-size: 12pt;">&nbsp;</span></p>
+<p style="text-align: justify;"><span style="font-family: verdana, geneva; font-size: 12pt;"><strong>S= 16088, 24975 - </strong>Melhorias e corre&ccedil;&otilde;es no reajuste de pre&ccedil;o:</span></p>
+<ul>
+<li style="text-align: justify;"><span style="font-family: verdana, geneva; font-size: 12pt;">O campo de data&nbsp; "ultima altera&ccedil;&atilde;o" do pre&ccedil;o de venda no cadastro de produto, ser&aacute; atualizado quando o pre&ccedil;o de varejo for atualizado a partir do reajuste de pre&ccedil;o;</span></li>
+<li style="text-align: justify;"><span style="font-family: verdana, geneva; font-size: 12pt;">No reajuste de pre&ccedil;o &eacute; aplicado o percentual definido no "&iacute;ndice reajuste", por se tratar de percentual em alguns casos o pre&ccedil;o fica com uma varia&ccedil;&atilde;o ruim de troco, exemplo: R$ 2,37 e o usu&aacute;rio deseja arredondar para R$ 2,35 ou 2,40. Sistema permitir&aacute; que usu&aacute;rio altere o "pre&ccedil;o novo" antes de aplicar reajuste;</span></li>
+<li style="text-align: justify;">
+<p><span style="font-family: verdana, geneva; font-size: 12pt;">No reajuste de pre&ccedil;o &eacute; poss&iacute;vel escolher v&aacute;rias varia&ccedil;&otilde;es de filtros, e alguns deles podem resultar nos mesmos produtos, fazendo com que um sobreponha o outro, exemplo:</span></p>
+<p><span style="font-family: verdana, geneva; font-size: 12pt;">1&ordm; - Varia&ccedil;&atilde;o: Todos os produtos: Grupo ELETRONICOS com 10%</span><br /><span style="font-family: verdana, geneva; font-size: 12pt;">2&ordm; - Varia&ccedil;&atilde;o: Todos os produtos: Marca PHILCO com 20%</span></p>
+<p><span style="font-family: verdana, geneva; font-size: 12pt;">Pode existir um produto que esteja no mesmo grupo e marca, quando isso ocorrer sistema identificar&aacute; quais os produtos est&atilde;o em conflito para que o usu&aacute;rio consiga definir qual dois dois percentuais/item de reajuste deve ser aplicado;</span></p>
+<span style="font-family: verdana, geneva; font-size: 12pt;">Abaixo um exemplo onde foram utilizadas varia&ccedil;&otilde;es que resultaram na inclus&atilde;o do&nbsp; mesmo produto, nesse caso o sistema destacar&aacute; na cor amarela os produtos, o usu&aacute;rio dever&aacute; remover as duplicidades, de forma que produto n&atilde;o se repita:</span></li>
+</ul>
+<p><span style="font-family: verdana, geneva; font-size: 12pt;"><img style="display: block; margin-left: auto; margin-right: auto;" src="https://s3.amazonaws.com/movidesk-files/DD260CAD68617BFB86982590D9EB4DC7" width="801" height="268" />&nbsp;</span></p>
+<ul>
+<li><span style="font-family: verdana, geneva; font-size: 12pt;">Reajuste de pre&ccedil;os n&atilde;o estava gerando pendencia de sincroniza&ccedil;&atilde;o;</span></li>
+</ul>
+<p><span style="font-family: verdana, geneva; font-size: 12pt;">&nbsp;</span></p>
+<p><span style="font-family: verdana, geneva; font-size: 12pt;"><strong>S=&nbsp;<span class="breadcrumb-item" style="font-stretch: normal; text-overflow: ellipsis; white-space: nowrap;">24979 -&nbsp;</span></strong>Aviso de campanha promocional ativa para os produtos adicionados:</span></p>
+<p><span style="font-family: verdana, geneva; font-size: 12pt;">Ao tentar "Aplicar promo&ccedil;&atilde;o" em "Campanha promocional", O sistema j&aacute; avisava sobre exist&ecirc;ncia de campanha ativa para produtos adicionados, porem s&oacute; estava levando em considera&ccedil;&atilde;o os ativos no momento atual, caso a campanha fosse para um per&iacute;odo posterior (agendado), o sistema permitia a inclus&atilde;o sem avisar que j&aacute; havia uma campanha agendada para aquele per&iacute;odo com os mesmo produtos. Corrigido o aviso para verificar se existe campanha ativa agendada.</span></p>
+<p><span style="font-family: verdana, geneva; font-size: 12pt;">Abaixo um exemplo, onde o sistema avisou que j&aacute; existia uma campanha ativa agendada para o per&iacute;odo:</span></p>
+<p><span style="font-family: verdana, geneva; font-size: 12pt;"><img style="display: block; margin-left: auto; margin-right: auto;" src="https://s3.amazonaws.com/movidesk-files/AD6C03B2AA3A996D636F44D57868A15E" width="800" height="450" /></span></p>
+<p><span style="font-family: verdana, geneva; font-size: 12pt;">&nbsp;</span></p>
+<p><span style="font-family: verdana, geneva; font-size: 12pt;"><strong>&nbsp;S=</strong><span class="breadcrumb-item" style="font-stretch: normal; text-overflow: ellipsis; white-space: nowrap; color: #000000;"><strong>24986, 24846, 24848,&nbsp;24853</strong>&nbsp;-&nbsp;</span>Melhorias e corre&ccedil;&otilde;es em rotina de comodato:</span></p>
+<p><span style="font-family: verdana, geneva; font-size: 12pt;">&nbsp;</span></p>
+<ul>
+<li><span style="font-family: verdana, geneva; font-size: 12pt;">Em Comodatos - Romaneio Comodato existe uma &aacute;rea onde &eacute; apresentado os saldos por tipo de opera&ccedil;&atilde;o, implementado Status junto a descri&ccedil;&atilde;o do comodato:</span></li>
+</ul>
+<p><span style="font-family: verdana, geneva; font-size: 12pt;"><strong><img style="display: block; margin-left: auto; margin-right: auto;" src="https://s3.amazonaws.com/movidesk-files/291796B3F3A7A93EE01D353DCB62F59D" width="801" height="281" /></strong></span></p>
+<p><span style="font-family: verdana, geneva; font-size: 12pt;">&nbsp;</span></p>
+<ul>
+<li><span style="font-family: verdana, geneva; font-size: 12pt;">Em&nbsp; Comodato - Gest&atilde;o de Comodato: Adicionado o c&oacute;digo e nome do local associado:</span></li>
+</ul>
+<p><span style="font-family: verdana, geneva; font-size: 12pt;"><img style="display: block; margin-left: auto; margin-right: auto;" src="https://s3.amazonaws.com/movidesk-files/C8A28C412A8D23520EDD4AB0F82C64B8" width="801" height="163" /></span></p>
+<p><span style="font-family: verdana, geneva; font-size: 12pt;">&nbsp;</span></p>
+<ul>
+<li><span style="font-family: verdana, geneva; font-size: 12pt;">Comodato - Remessa/Retorno: Na inclus&atilde;o de uma remessa/retorno n&atilde;o estava listando os comodatos e suas&nbsp; quantidades para o parceiro definido, somente a aba movimenta&ccedil;&atilde;o estava apresentando os dados.</span></li>
+</ul>
+<p><span style="font-family: verdana, geneva; font-size: 12pt;"><strong><img style="display: block; margin-left: auto; margin-right: auto;" src="https://s3.amazonaws.com/movidesk-files/36E4E352CEF895F1FBDDC1F999361814" width="800" height="240" /></strong></span></p>
+<p><span style="font-family: verdana, geneva; font-size: 12pt;">&nbsp;</span></p>
+<ul>
+<li><span style="font-family: verdana, geneva; font-size: 12pt;">Comodato - Lan&ccedil;amento de Entrada/Sa&iacute;da:&nbsp; contempla o Local de estoque e Status (cheio/vazio).</span></li>
+</ul>
+<p><span style="font-family: verdana, geneva; font-size: 12pt;"><img style="display: block; margin-left: auto; margin-right: auto;" src="https://s3.amazonaws.com/movidesk-files/6ABEE3426C17A0AB54EB2F51B4E6EC7D" width="801" height="184" /></span></p>
+<p><span style="font-family: verdana, geneva; font-size: 12pt;">&nbsp;</span></p>
+<ul>
+<li><span style="font-family: verdana, geneva; font-size: 12pt;">Comodatos - Entrada/Sa&iacute;da: ser&atilde;o apresentados o estoque por local e de estoque e Status:</span></li>
+</ul>
+<p><span style="font-family: verdana, geneva; font-size: 12pt;"><strong><img style="display: block; margin-left: auto; margin-right: auto;" src="https://s3.amazonaws.com/movidesk-files/184EA066154768739A4E1DF31441AF05" width="801" height="362" /></strong></span></p>
+<p><span style="font-family: verdana, geneva; font-size: 12pt;">&nbsp;</span></p>
+<ul>
+<li><span style="font-family: verdana, geneva; font-size: 12pt;">&nbsp;Em Comodato - Gest&atilde;o de comodato: "Dados" e "Consulta Avan&ccedil;ada" ser&aacute; destacado de vermelho quando cancelado:</span></li>
+</ul>
+<p><span style="font-family: verdana, geneva; font-size: 12pt;"><img style="display: block; margin-left: auto; margin-right: auto;" src="https://s3.amazonaws.com/movidesk-files/6961DD186309C60B691512BD2584B832" width="801" height="166" /></span></p>
+<p><span style="font-family: verdana, geneva; font-size: 12pt;">&nbsp;</span></p>
+<ul>
+<li><span style="font-family: verdana, geneva; font-size: 12pt;">&nbsp;Em Comodato - Romaneio Comodato:&nbsp;"Dados" e "Consulta Avan&ccedil;ada" Ser&aacute; destacado de vermelho quando cancelado:</span></li>
+</ul>
+<p><span style="font-family: verdana, geneva; font-size: 12pt;"><img style="display: block; margin-left: auto; margin-right: auto;" src="https://s3.amazonaws.com/movidesk-files/0B9BA6D59F177524552D1A16E7F73382" width="800" height="298" /></span></p>
+<p><span style="font-family: verdana, geneva; font-size: 12pt;">&nbsp;</span></p>
+<ul>
+<li><span style="font-family: verdana, geneva; font-size: 12pt;">Em Cadastro - Parceiro: Adicionado aba "Comodatos" - "Comodato Limite" &nbsp;implementado uma aba para definir por parceiro a quantidade limite de cada comodato.</span></li>
+</ul>
+<p><span style="font-family: verdana, geneva; font-size: 12pt;"><img style="display: block; margin-left: auto; margin-right: auto;" src="https://s3.amazonaws.com/movidesk-files/BBCFDD7F0993875541FAF24668E94A32" width="797" height="174" /></span></p>
+<p><span style="font-family: verdana, geneva; font-size: 12pt;">&nbsp;</span></p>
+<ul>
+<li><span style="font-family: verdana, geneva; font-size: 12pt;">Cadastro - Parceiro: Adicionado aba "Comodatos" - "Comodato Saldo" para usu&aacute;rio validar qual a quantidade&nbsp;que j&aacute; foi enviada para o&nbsp;cliente,&nbsp;essa informa&ccedil;&atilde;o permitir&aacute; ao usu&aacute;rio definir o melhor limite:</span></li>
+</ul>
+<p><span style="font-family: verdana, geneva; font-size: 12pt;"><img style="display: block; margin-left: auto; margin-right: auto;" src="https://s3.amazonaws.com/movidesk-files/99049DD88B68A473B252E70A36870DDF" width="799" height="219" /></span></p>
+<p><span style="font-family: verdana, geneva; font-size: 12pt;">&nbsp;</span></p>
+<p><span style="font-family: verdana, geneva; font-size: 12pt;"><strong>S=&nbsp;24557</strong> -&nbsp; Adicionado&nbsp;a coluna de "CST IPI" no formul&aacute;rio de devolu&ccedil;&atilde;o de documentos:&nbsp;</span></p>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="https://s3.amazonaws.com/movidesk-files/D6E09CF6E03ADF5543BA687E94D1C79F" width="900" height="173" /></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 12pt; font-family: verdana, geneva;"><strong>S= 24692</strong> - Corrigido falha em filtro no controle de entrega, o filtro por c&oacute;digo identificador n&atilde;o estava localizando o documento quando o c&oacute;digo&nbsp; possu&iacute;a mais de 10 caracteres, falha corrigida.</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 12pt; font-family: verdana, geneva;"><strong>S=&nbsp;24406</strong> - melhorias no relat&oacute;rio em Cadastro - Relat&oacute;rios - Produtos - "10 Produtos por tabele de tributa&ccedil;&atilde;o".</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p style="text-align: justify;">&nbsp;</p>
