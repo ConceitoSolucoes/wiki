@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta
+	  charset="utf-8"
+	  http-equiv="Content-Language"
+	  content="pt-br"
+    >
+    <title>Conceito tecnologia - WIKI</title>
+    <link rel="stylesheet" href="styles.css">	
+  </head>
+  <body>
+    <div class="topo">
+      <iframe class="topo clear-fix" src="header.html"></iframe>
+	</div>
+	<div class="artigo">
+	
+	
+	
+    <h1>NFS-e (Nota Fiscal de Serviços Eletrônica)</h1>
+	
+	<h2>Conceito</h2>
+    
+	<p>O Projeto Nota Fiscal de Serviços Eletrônica (NFS-e) está sendo desenvolvido de forma integrada, pela Receita Federal do Brasil (RFB) e Associação Brasileira das Secretarias de Finanças das Capitais (Abrasf), atendendo o Protocolo de Cooperação ENAT nº 02, de 7 de dezembro de 2007, que atribuiu a coordenação e a responsabilidade pelo desenvolvimento e implantação do Projeto da NFS-e.</p>
+    
+	<p>A Nota Fiscal de Serviços Eletrônica (NFS-e) é um documento de existência digital, gerado e armazenado eletronicamente em Ambiente Nacional pela RFB, pela prefeitura ou por outra entidade conveniada, para documentar as operações de prestação de serviços.</p>
+    
+	<p>Esse projeto visa o benefício das administrações tributárias padronizando e melhorando a qualidade das informações, racionalizando os custos e gerando maior eficácia, bem como o aumento da competitividade das empresas brasileiras pela racionalização das obrigações acessórias (redução do custo-Brasil), em especial a dispensa da emissão e guarda de documentos em papel.</p>
+	
+	<p>A geração da Nota Fiscal de Serviços Eletrônica - NFS-e é feita, automaticamente, por meio de serviços informatizados, disponibilizados aos contribuintes. Para que sua geração seja efetuada, dados que a compõem serão informados, analisados, processados, validados e, se corretos, gerarão o documento. A responsabilidade pelo cumprimento da obrigação acessória de emissão da NFS-e e pelo correto fornecimento dos dados à secretaria, para a geração da mesma, é do contribuinte.</p>
+	  
+	<h2>Recibo provisório de serviços (RPS)</h2>
+	
+	<p>A NFS-e será gerada através dos serviços informatizados disponibilizados pela respectiva secretaria municipal de finanças.</p>
+
+	<p>No intuito de prover uma solução de contingência para o contribuinte, foi criado o Recibo Provisório de Serviços (RPS), que é um documento de posse e responsabilidade do contribuinte, que deverá ser gerado manualmente ou por alguma aplicação local, possuindo uma numeração seqüencial crescente e devendo ser convertido em NFS-e no prazo estipulado pela legislação tributária municipal.</p>
+
+	<p>Este documento atende, também, àqueles contribuintes que, porventura, não dispõem de infra-estrutura de conectividade com a secretaria em tempo integral, podendo gerar os documentos e enviá-los, em lote, para processamento e geração das respectivas NFS-e.</p>
+
+	<p>Para que os RPS possam fazer parte de um lote a ser enviado para geração das NFS-e correspondentes, é necessário que o contribuinte possua uma aplicação instalada em seus computadores, seja ela fornecida pela secretaria ou desenvolvida particularmente, seguindo as especificações disponibilizadas por essa.</p>
+
+	<p>O envio de RPS à secretaria para geração da NFS-e é feito em lotes, ou seja, vários RPS agrupados para gerar uma NFS-e para cada um deles.</p>
+
+	<p>Este serviço de Recepção de Lote de RPS é definido como Assíncrono. (Um processo é assíncrono quando ocorre uma chamada ao mesmo, com envio de determinadas informações - lote de RPS nesse caso -  e seu retorno é dado em outro momento.)</p>
+
+
+	<p>Como comprovante de envio de lote de RPS, o contribuinte receberá um número de protocolo de recebimento. O lote recebido pela secretaria será colocado em uma fila de processamento, e será executado em momento oportuno. Depois de processado, gerará um resultado que estará disponível ao contribuinte. Esse resultado poderá ser as NFS-e correspondentes ou a lista de erros encontrados no lote.</p>
+	
+	<p>A numeração dos lotes de RPS é de responsabilidade do contribuinte, devendo ser única e distinta para cada lote.</p>
+
+	<p>Um RPS pode ser enviado com o status de cancelado gerando uma NFS-e cancelada. Um RPS já convertido em NFS-e não pode ser reenviado. Havendo necessidade de cancelamento do documento, deve ser cancelada a respectiva NFS-e.</p>
+	
+	<h2>Geração de NFS-e</h2>
+	
+	
+	<p>A NFS-e contém campos que reproduzem as informações enviadas pelo contribuinte e outros que são de responsabilidade do Fisco. Uma vez gerada, a NFS-e não pode mais ser alterada, admitindo-se, unicamente por iniciativa do contribuinte, ser cancelada ou substituída, hipótese esta em que deverá ser mantido o vínculo entre a nota substituída e a nova.</p>
+
+	<p>A NFS-e deve conter a identificação dos serviços em conformidade com os itens da Lista de Serviços, anexa à Lei Complementar n°116, de 2003, acrescida daqueles que foram vetados e de um item "9999" para "outros serviços".</p>
+
+	<p>É possível descrever vários serviços numa mesma NFS-e, desde que relacionados a um único item da Lista, de mesma alíquota e para o mesmo tomador de serviço. Quando a legislação do município assim exigir, no caso da atividade de construção civil, as NFS-e deverão ser emitidas por obra.</p>
+
+	<p>A identificação do prestador de serviços será feita pelo CNPJ, que pode ser conjugado com a Inscrição Municipal, não sendo esta de uso obrigatório.</p>
+
+	<p>A informação do CNPJ do tomador do serviço é obrigatória para pessoa jurídica, exceto quando se tratar de tomador do exterior.</p>
+
+	<p>A competência de uma NFS-e é o mês da ocorrência do fato gerador. O sistema assumirá automaticamente o Mês/Ano da emissão do RPS ou da NFS-e, o que for inferior, podendo ainda o contribuinte informar uma competência anterior.</p>
+
+	<p>A base de cálculo da NFS-e é o Valor Total de Serviços, subtraído do Valor de Deduções previstas em lei.</p>
+
+	<p>O Valor do ISS é definido de acordo com a Natureza da Operação, a Opção pelo Simples Nacional, o Regime Especial de Tributação e o ISS Retido, e será sempre calculado, exceto nos seguintes casos:</p>
+
+	<ul>
+      <li>A Natureza da Operação for Tributação no Município; Exigibilidade suspensa por decisão judicial ou Exigibilidade suspensa por procedimento administrativo e o Regime Especial de Tributação for Microempresa Municipal; Estimativa ou Sociedade de profissionais;</li>
+      <li>A Natureza da Operação for Tributação fora do Município, nesse caso os campos Alíquota de Serviço e Valor do ISS ficarão abertos para o prestador indicar os valores;</li>
+      <li>A Natureza da Operação for Imune ou Isenta, nesses casos o ISS será calculado com alíquota zero.
+O contribuinte for optante pelo Simples Nacional e não tiver o ISS retido na fonte;</li>
+    </ul>
+
+	<p>A alíquota do ISS é definida pela legislação municipal. Quando a NFS-e é tributada fora do município em que está sendo emitida, a alíquota será informada pelo contribuinte.</p>  
+	
+    <p><b>Fonte: http://sped.rfb.gov.br/</b><p>
+	
+	</div>
+	<div class="rodape">
+      <iframe class="clear-fix" src="footer.html"></iframe>
+	</div>
+  </body>
+</html>
